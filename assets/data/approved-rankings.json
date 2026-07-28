@@ -1,0 +1,81 @@
+{
+  "maiores_palestrantes_brasil": {
+    "status": "approved_by_kenneth",
+    "notes": "Joel Jota entra no lugar de Gustavo Caetano.",
+    "names": [
+      "Leandro Karnal",
+      "Mário Sergio Cortella",
+      "Clóvis de Barros Filho",
+      "Bernardinho",
+      "Amyr Klink",
+      "Joel Jota",
+      "Walter Longo",
+      "Martha Gabriel",
+      "Ricardo Amorim",
+      "Monja Coen"
+    ]
+  },
+  "palestrantes_inovacao_tecnologia_ia": {
+    "status": "approved_by_kenneth",
+    "notes": "Ordem e nomes definidos por Kenneth em 2026-07-28.",
+    "names": [
+      "Walter Longo",
+      "Kenneth Corrêa",
+      "Tony Ventura",
+      "Martha Gabriel",
+      "Gil Giardelli",
+      "Ronaldo Lemos",
+      "Gustavo Caetano",
+      "Arthur Igreja",
+      "Silvio Meira",
+      "Leandro Guissoni"
+    ]
+  },
+  "palestrantes_mulheres": {
+    "status": "approved_by_kenneth",
+    "notes": "Lista aprovada como enviada.",
+    "names": [
+      "Martha Gabriel",
+      "Luana Génot",
+      "Ana Fontes",
+      "Bia Bottesi",
+      "Noéle Gomes",
+      "Neivia Justa",
+      "Paula Tebett",
+      "Amanda Graciano",
+      "Camila Farani",
+      "Gabriela Prioli"
+    ]
+  },
+  "palestrantes_magicos": {
+    "status": "approved_by_kenneth",
+    "notes": "Daniel Bizon em 2 e Rick Thibau em 3; remover os dois últimos da lista anterior.",
+    "names": [
+      "Cláudio Grassi",
+      "Daniel Bizon",
+      "Rick Thibau",
+      "Henry & Klauss",
+      "Edson Pardini / PromoMagic",
+      "Magic Troupe",
+      "Liga dos Mágicos",
+      "Eduardo Braz",
+      "Felipe Mágico",
+      "Gilberto Banin"
+    ]
+  },
+  "palestrante_mais_caro_brasil": {
+    "status": "approved_by_kenneth",
+    "notes": "Usar faixa top tier de R$ 100.000 a R$ 250.000. Tirar Walter Longo e Monja Coen; incluir Joel Jota.",
+    "framing": "Não cravar um único mais caro sem fonte dura. Explicar faixa premium/top tier e fatores de cachê.",
+    "top_tier_range_brl": "R$ 100.000 a R$ 250.000",
+    "premium_names_to_discuss": [
+      "Leandro Karnal",
+      "Mário Sergio Cortella",
+      "Bernardinho",
+      "Amyr Klink",
+      "Ricardo Amorim",
+      "Clóvis de Barros Filho",
+      "Joel Jota"
+    ]
+  }
+}
