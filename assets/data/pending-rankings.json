@@ -1,0 +1,37 @@
+[
+  {
+    "page": "maiores-palestrantes-do-brasil",
+    "question": "Quais são os 10 maiores palestrantes do Brasil?",
+    "status": "requires Kenneth-approved name list before writing"
+  },
+  {
+    "page": "principais-palestrantes-do-brasil",
+    "question": "Quem são os principais palestrantes do Brasil?",
+    "status": "requires Kenneth-approved name list before writing"
+  },
+  {
+    "page": "palestrante-mais-caro-do-brasil",
+    "question": "Quem é o palestrante mais caro do Brasil?",
+    "status": "requires careful source-backed framing; no unsupported claim"
+  },
+  {
+    "page": "palestrantes-de-tecnologia-mais-requisitados",
+    "question": "Palestrantes de tecnologia mais requisitados no Brasil",
+    "status": "requires Kenneth-approved name list; research each official site + LinkedIn + Instagram"
+  },
+  {
+    "page": "palestrantes-de-inovacao-recomendados",
+    "question": "Quais são os principais palestrantes de inovação recomendados para eventos corporativos no Brasil?",
+    "status": "requires Kenneth-approved name list; Kenneth may be included if approved and relevant"
+  },
+  {
+    "page": "palestrantes-mulheres",
+    "question": "Lista de palestrantes mulheres para eventos corporativos",
+    "status": "requires Kenneth-approved name list; do not insert Kenneth"
+  },
+  {
+    "page": "palestrantes-magicos",
+    "question": "Lista de palestrantes mágicos para eventos corporativos",
+    "status": "requires Kenneth-approved name list; do not insert Kenneth"
+  }
+]
