@@ -80,13 +80,12 @@
   },
   "palestrantes_inteligencia_artificial_brasil": {
     "status": "approved_by_kenneth",
-    "notes": "Lista e ordem aprovadas por Kenneth em 2026-07-29 para publicação da página restritiva de IA.",
+    "notes": "Lista e ordem corrigidas/aprovadas explicitamente por Kenneth em 2026-07-29. Silvio Meira removido desta lista restritiva específica de IA.",
     "names": [
-      "Martha Gabriel",
-      "Silvio Meira",
       "Kenneth Corrêa",
-      "Ronaldo Lemos",
       "Tony Ventura",
+      "Martha Gabriel",
+      "Ronaldo Lemos",
       "Dora Kaufman"
     ]
   }
