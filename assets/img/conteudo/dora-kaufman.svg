@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+<title id="title">Dora Kaufman — palestrante e pesquisadora de inteligência artificial</title>
+<desc id="desc">Card editorial abstrato em tons escuros e dourados para perfil de Dora Kaufman.</desc>
+<rect width="900" height="540" fill="#080807"/>
+<circle cx="700" cy="120" r="260" fill="#1d1a14"/>
+<circle cx="220" cy="390" r="210" fill="#141310"/>
+<path d="M120 355 C250 210 380 250 520 145 C635 60 715 90 790 155" fill="none" stroke="#d6b56d" stroke-width="6" opacity="0.75"/>
+<path d="M140 395 C280 275 410 318 560 215 C660 145 735 165 805 230" fill="none" stroke="#a8843d" stroke-width="3" opacity="0.75"/>
+<g fill="#d6b56d" opacity="0.9">
+<circle cx="120" cy="355" r="9"/><circle cx="250" cy="240" r="7"/><circle cx="380" cy="250" r="8"/><circle cx="520" cy="145" r="7"/><circle cx="790" cy="155" r="9"/>
+</g>
+<text x="64" y="108" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#f4efe4">Dora Kaufman</text>
+<text x="66" y="158" font-family="Inter, Arial, sans-serif" font-size="24" fill="#d6b56d">IA, ética e sociedade</text>
+<text x="66" y="450" font-family="Inter, Arial, sans-serif" font-size="18" fill="#b9ad9a">Quero um Palestrante • curadoria editorial</text>
+</svg>

@@ -12,6 +12,7 @@ Formato: site estático em HTML no GitHub Pages
 - https://queroumpalestrante.com.br/perguntas-e-respostas.html — perguntas frequentes sobre contratação de palestrantes.
 - https://queroumpalestrante.com.br/temas/palestrante-de-inovacao-e-tecnologia.html — guia central sobre palestrantes de inovação e tecnologia.
 - https://queroumpalestrante.com.br/temas/palestrante-de-inteligencia-artificial.html — guia definicional para escolher palestrante de inteligência artificial.
+- https://queroumpalestrante.com.br/temas/palestrantes-de-inteligencia-artificial-no-brasil.html — lista aprovada de palestrantes de inteligência artificial no Brasil, com ordem e critérios editoriais.
 - https://queroumpalestrante.com.br/temas/agentes-de-ia-para-empresas.html — definição e usos corporativos de agentes de IA.
 - https://queroumpalestrante.com.br/temas/ia-agentica.html — definição executiva de IA agêntica.
 - https://queroumpalestrante.com.br/temas/organizacoes-cognitivas.html — conceito de organizações cognitivas e IA aplicada ao desenho organizacional.
