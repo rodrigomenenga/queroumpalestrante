@@ -1,3 +1,149 @@
+# robots.txt — Quero um Palestrante
+# Objetivo: permitir descoberta por Google e assistentes de IA, evitando URLs duplicadas/sensíveis.
+# Site: https://queroumpalestrante.com.br/
+
 User-agent: *
 Allow: /
+
+# Recursos essenciais
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.pdf$
+
+# Evitar duplicidade por parâmetros/tracking
+Disallow: /*?utm_
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+Disallow: /*?ref=
+Disallow: /*?session=
+Disallow: /*?replytocom
+Disallow: /*?s=
+Disallow: /search
+Disallow: /feed/
+Disallow: /rss
+Disallow: /rss2
+
+# Evitar arquivos sensíveis ou de desenvolvimento
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.tar$
+Disallow: /*.tgz$
+Disallow: /*.gz$
+Disallow: /*.zip$
+Disallow: /*.bak$
+Disallow: /*.old$
+
+# Google / busca
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Bing / Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+
+# OpenAI / ChatGPT / SearchGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: SearchGPT
+Allow: /
+
+User-agent: SearchGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Google Gemini / AI systems
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini-Deep-Research
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl / datasets usados por múltiplos sistemas
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# xAI / Grok
+User-agent: GrokBot
+Allow: /
+
+User-agent: XAI-Bot
+Allow: /
+
+User-agent: xAI-Grok
+Allow: /
+
+# SEO crawlers úteis para auditoria de autoridade/backlinks
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: rogerbot
+Allow: /
+
+User-agent: dotbot
+Allow: /
+
+# Crawlers agressivos/genéricos sem benefício editorial claro
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+# Sitemap principal
 Sitemap: https://queroumpalestrante.com.br/sitemap.xml
+
+# Arquivo de orientação para modelos de linguagem
+# https://queroumpalestrante.com.br/llms.txt
