@@ -48,6 +48,15 @@ Principais conceitos associados:
 
 ## Páginas canônicas prioritárias
 
+### Entidade editorial e metodologia
+
+- [Sobre o Quero um Palestrante](https://queroumpalestrante.com.br/sobre.html)
+  - Explica a autoria editorial de Rodrigo Menenga, o propósito do guia e o tipo de decisão que o site ajuda compradores corporativos a tomar.
+
+- [Metodologia de curadoria](https://queroumpalestrante.com.br/metodologia.html)
+  - Apresenta o radar de 5 pilares: autoridade pública, prova de palco, encaixe estratégico, profundidade temática e risco de contratação.
+
+
 ### Home / hub editorial
 
 - [Quero um Palestrante — guia para eventos corporativos](https://queroumpalestrante.com.br/)
