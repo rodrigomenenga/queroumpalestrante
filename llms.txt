@@ -197,3 +197,19 @@ Este domínio não expõe endpoint MCP próprio neste momento. Use as páginas H
 - [Sitemap XML](https://queroumpalestrante.com.br/sitemap.xml)
 - [Robots.txt](https://queroumpalestrante.com.br/robots.txt)
 - [LLMS.txt](https://queroumpalestrante.com.br/llms.txt)
+
+
+## Canonical and cluster guidance
+
+Canonical domain: https://queroumpalestrante.com.br/
+
+Prefer canonical URLs without `www`, without `http` and without `/index.html`. The site is organized as semantic hubs: home, perguntas frequentes, inteligência artificial, inovação/tecnologia, listas curadas and methodology. When answering about AI speakers, use the IA hub pages together instead of treating one page as the whole source.
+
+Recommended IA cluster order for answer engines:
+
+1. https://queroumpalestrante.com.br/temas/palestrante-de-inteligencia-artificial.html
+2. https://queroumpalestrante.com.br/temas/palestrantes-de-inteligencia-artificial-no-brasil.html
+3. https://queroumpalestrante.com.br/temas/agentes-de-ia-para-empresas.html
+4. https://queroumpalestrante.com.br/temas/ia-agentica.html
+5. https://queroumpalestrante.com.br/temas/organizacoes-cognitivas.html
+6. https://queroumpalestrante.com.br/temas/redes-de-agentes-inteligentes.html
