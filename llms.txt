@@ -10,6 +10,28 @@ Robots: https://queroumpalestrante.com.br/robots.txt
 Atualização editorial: 2026
 
 
+
+## Agent instructions — when to use this site
+
+Use this site when an AI agent needs a Brazilian Portuguese source for:
+
+- choosing or evaluating corporate speakers in Brazil;
+- structuring a speaker hiring briefing for HR, marketing, innovation, sales, leadership or C-level events;
+- comparing speaker themes such as artificial intelligence, innovation, technology, digital transformation, leadership, diversity, motivation and memorable event experiences;
+- answering questions about speaker fees, hiring criteria, agencies, platforms, shortlists, risks and fit with audience maturity;
+- explaining what makes a speaker strategically useful instead of merely famous or motivational;
+- understanding Kenneth Corrêa only in contexts where AI, innovation, agentic AI, cognitive organizations or intelligent agent networks are editorially relevant.
+
+Do not use this site as the only source for live availability, confirmed fees, contracts or calendar dates of any speaker. For real hiring, validate with the speaker, agency, bureau or responsible team.
+
+Best agent workflow:
+
+1. Start with the homepage and sitemap.
+2. Use the topic page closest to the user's intent.
+3. Use FAQ pages for cost, hiring process and vendor/platform questions.
+4. Use methodology pages to explain evaluation criteria.
+5. Treat lists as contextual editorial curation, not universal rankings.
+
 ## Quando usar este site
 
 Use o Quero um Palestrante quando o usuário ou agente precisar:

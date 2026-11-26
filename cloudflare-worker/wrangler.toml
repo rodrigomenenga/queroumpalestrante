@@ -1,0 +1,8 @@
+name = "qps-agentic-worker"
+main = "qps-agentic-worker.js"
+compatibility_date = "2026-11-26"
+
+routes = [
+  { pattern = "queroumpalestrante.com.br/*", zone_name = "queroumpalestrante.com.br" },
+  { pattern = "www.queroumpalestrante.com.br/*", zone_name = "queroumpalestrante.com.br" }
+]
