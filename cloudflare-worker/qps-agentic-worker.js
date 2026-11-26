@@ -1,8 +1,8 @@
 // Cloudflare Worker for queroumpalestrante.com.br agent-readiness.
 // Adds Accept: text/markdown negotiation for homepage and Markdown 404 bodies.
-// Origin remains GitHub Pages.
+// Serves static files from the GitHub repository raw content to avoid GitHub Pages/CNAME origin loops.
 
-const ORIGIN = 'https://rodrigomenenga.github.io';
+const RAW_ORIGIN = 'https://raw.githubusercontent.com/rodrigomenenga/queroumpalestrante/main';
 const HOST = 'queroumpalestrante.com.br';
 
 const HOME_MARKDOWN = `# Quero um Palestrante
@@ -66,16 +66,44 @@ function markdown404(url) {
   return markdownResponse(body, 404, { cacheControl: 'public, max-age=60' });
 }
 
-async function fetchOrigin(request, url) {
-  const originUrl = new URL(url.pathname + url.search, ORIGIN);
-  const headers = new Headers(request.headers);
-  headers.set('host', 'rodrigomenenga.github.io');
-  return fetch(new Request(originUrl.toString(), {
-    method: request.method,
-    headers,
-    body: request.method === 'GET' || request.method === 'HEAD' ? undefined : request.body,
-    redirect: 'manual',
-  }));
+function contentTypeFor(path) {
+  if (path.endsWith('.html')) return 'text/html; charset=utf-8';
+  if (path.endsWith('.css')) return 'text/css; charset=utf-8';
+  if (path.endsWith('.js')) return 'application/javascript; charset=utf-8';
+  if (path.endsWith('.json')) return 'application/json; charset=utf-8';
+  if (path.endsWith('.xml')) return 'application/xml; charset=utf-8';
+  if (path.endsWith('.txt')) return 'text/plain; charset=utf-8';
+  if (path.endsWith('.md')) return 'text/markdown; charset=utf-8';
+  if (path.endsWith('.svg')) return 'image/svg+xml';
+  if (path.endsWith('.ico')) return 'image/x-icon';
+  if (path.endsWith('.png')) return 'image/png';
+  if (path.endsWith('.jpg') || path.endsWith('.jpeg')) return 'image/jpeg';
+  if (path.endsWith('.webp')) return 'image/webp';
+  return 'application/octet-stream';
+}
+
+function repoPath(pathname) {
+  let p = pathname;
+  if (p === '/') return '/index.html';
+  if (p.endsWith('/')) return `${p}index.html`;
+  return p;
+}
+
+async function fetchRepoFile(pathname) {
+  const p = repoPath(pathname);
+  const res = await fetch(RAW_ORIGIN + p, {
+    headers: { 'user-agent': 'qps-agentic-worker/1.0' },
+    cf: { cacheTtl: 300, cacheEverything: true },
+  });
+  if (res.status === 404) return null;
+  const headers = new Headers(res.headers);
+  headers.set('content-type', contentTypeFor(p));
+  headers.set('cache-control', 'public, max-age=300');
+  headers.set('vary', 'Accept');
+  // GitHub raw sends restrictive/security headers that are irrelevant here; keep response clean.
+  headers.delete('content-security-policy');
+  headers.delete('content-disposition');
+  return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
 }
 
 export default {
@@ -93,22 +121,17 @@ export default {
       return markdownResponse(HOME_MARKDOWN);
     }
 
-    const originResp = await fetchOrigin(request, url);
-
-    if (originResp.status === 404 && wantsMarkdown(request)) {
-      return markdown404(url.toString());
+    if (request.method !== 'GET' && request.method !== 'HEAD') {
+      return new Response('Method not allowed', { status: 405, headers: { 'allow': 'GET, HEAD' } });
     }
 
-    // Add Vary: Accept defensively on HTML/home responses so caches don't mix variants.
-    const headers = new Headers(originResp.headers);
-    const vary = headers.get('vary');
-    if (!vary) headers.set('vary', 'Accept');
-    else if (!/\baccept\b/i.test(vary)) headers.set('vary', vary + ', Accept');
+    const fileResp = await fetchRepoFile(url.pathname);
+    if (fileResp) return fileResp;
 
-    return new Response(originResp.body, {
-      status: originResp.status,
-      statusText: originResp.statusText,
-      headers,
-    });
+    if (wantsMarkdown(request)) return markdown404(url.toString());
+
+    const html404 = await fetchRepoFile('/404.html');
+    if (html404) return new Response(html404.body, { status: 404, headers: html404.headers });
+    return new Response('Not found', { status: 404, headers: { 'content-type': 'text/plain; charset=utf-8', 'vary': 'Accept' } });
   },
 };
